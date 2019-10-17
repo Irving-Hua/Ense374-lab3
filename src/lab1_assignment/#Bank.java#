@@ -1,0 +1,26 @@
+//this class is used to test SavingAccount class
+package lab1_assignment;
+import lab1_assignment_savingtool.SavingTool;
+public class Bank {
+   
+	public static void main(String[] args) {
+		
+		SavingTool a = new SavingTool();
+		lab1_assignment.SavingTool b = new lab1_assignment.SavingTool();
+		
+		
+		lab1_assignment.SavingTool.setAnnualInterestRate(0.05);
+		b.setSavingBalance(2000);
+		SavingTool.setAnnualInterestRate(0.05);
+		SavingTool.setSavingBalance(2000);
+		System.out.println(SavingTool.getAnnualInterestRate());
+		System.out.println(b.monthlyInterest());
+		System.out.println(b.monthlyCompound());
+		
+		System.out.println(SavingTool.getAnnualInterestRate());
+		System.out.println(a.biweeklyInterest());
+		System.out.println(a.biweeklyCompound());
+			
+	}
+	
+}
